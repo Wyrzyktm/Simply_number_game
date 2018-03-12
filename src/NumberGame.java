@@ -40,14 +40,12 @@ public class NumberGame {
             if(randomNumber < guess){
                 System.out.println("It's smaller than " + guess + "guess.");
             }
-
             //jeżeli wylosowana liczba jest większa.
-            if(randomNumber > guess){
+            else if(randomNumber > guess){
                 System.out.println("It's larger than " + guess + "guess.");
             }
-
             //jeżeli gracz trafił to ustawia wartość hasWon na true i opuszcza pętlę.
-            if(randomNumber == guess){
+            else{
                 hasWon = true;
                 break;
             }
